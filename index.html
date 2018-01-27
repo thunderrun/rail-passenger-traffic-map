@@ -7,25 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no"
   />
   <title>subway</title>
-  <script type="text/javascript" src="https://webapi.amap.com/subway?v=1.0&key=75139a7d0e35241fa3f421fbd3a2b423&callback=cbk"></script>
 </head>
 
 <body>
   <div id="mysubway"></div>
-  <script type="text/javascript">
-    window.cbk = function () {
-      var mySubway = subway("mysubway", {
-        adcode: 3201,
-        easy: 1
-      });
-      mySubway.event.on('subway.complete',function(){
-        mySubway.getLinelist((allLineList)=>{
-          console.log(allLineList);          
-        });
-        mySubway.showLine("320100022330")
-      })
-    }
-  </script>
+  <script src="index.js"></script>
 </body>
 
 </html>

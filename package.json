@@ -1,0 +1,26 @@
+{
+  "name": "rail-passenger-traffic-map",
+  "version": "1.0.0",
+  "description": "## type keywords",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "reload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thunderrun/rail-passenger-traffic-map.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thunderrun/rail-passenger-traffic-map/issues"
+  },
+  "homepage": "https://github.com/thunderrun/rail-passenger-traffic-map#readme",
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "reload": "^2.2.2"
+  }
+}
