@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/thunderrun/rail-passenger-traffic-map#readme",
   "devDependencies": {
-    "eslint": "^4.16.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
     "reload": "^2.2.2"
+  },
+  "dependencies": {
+    "fabric": "^1.7.22"
   }
 }
