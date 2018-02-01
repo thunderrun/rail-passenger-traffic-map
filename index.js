@@ -24,21 +24,20 @@ const drawStations = (data) => {
   let texts = [];
   data.forEach(line => {
     line.st.forEach(station => {
-      console.log(station)
       let coordinates = station.p.split(' ');
       circles.push(new fabric.Circle({
-        radius: 5,
+        radius: 4,
         fill: 'white',
-        left: Number(coordinates[0])-3,
-        top: Number(coordinates[1])-3,
+        left: Number(coordinates[0])-2,
+        top: Number(coordinates[1])-2,
         borderColor: 'black',
         stroke: 'black', 
-        strokeWidth: 2,
+        strokeWidth: 1,
       }));
       texts.push(new fabric.Text(station.n, {
-        fontSize: 10,
-        left: Number(coordinates[0])+10,
-        top: Number(coordinates[1])+10
+        fontSize: 8,
+        left: Number(coordinates[0]) + 10,
+        top: Number(coordinates[1]) - 2,
       }))
     });
   });
