@@ -21,6 +21,6 @@
     "reload": "^2.2.2"
   },
   "dependencies": {
-    "fabric": "^1.7.22"
+    "fabric": "^2.0.1"
   }
 }
