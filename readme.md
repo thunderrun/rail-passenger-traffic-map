@@ -9,7 +9,10 @@ npm start
 
 ## type keywords
 
-- 商务写字楼
-- 住宅区
-- 风景名胜
-- 
+- workday traffic
+  - 商务写字楼
+  - 住宅小区
+
+- weekend traffic
+  - 风景名胜
+  - 购物中心

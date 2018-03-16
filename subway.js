@@ -1,5 +1,25 @@
-window.cbk = function() {
-  var mySubway = subway("mySubway", {
+const getCityNameInUrl = () => {
+  const currentUrlSearch = window.location.search;
+  const searchParams = new URLSearchParams(currentUrlSearch);
+  const cityName = searchParams.get('city');
+  return cityName;
+}
+
+const getCityAdcodeByCityName = (cityName) => {
+  return fetch('/data/cityToAdcode.json').then((response)=>{
+    return response.json();
+  }).then((cityAdcode)=>{
+    return cityAdcode[cityName]
+  });
+}
+
+window.cbk = async () => {
+
+
+  const cityName = getCityNameInUrl();
+  const cityAdcode = await getCityAdcodeByCityName(cityName);
+
+  const mySubway = subway("mySubway", {
     easy: 0,
     adcode: 3201
   });
