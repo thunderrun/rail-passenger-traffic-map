@@ -5,26 +5,13 @@ const getCityNameInUrl = () => {
   return cityName;
 };
 
-const getCityAdcode = cityName => {
-  return fetch("/data/cityToAdcode.json")
-    .then(response => {
-      return response.json();
-    })
-    .then(cityAdcode => {
-      return cityAdcode[cityName];
-    });
+const getCityAdcode = async cityName => {
+  const citiesAdcode = await (await fetch("/data/cityToAdcode.json")).json();
+  return citiesAdcode[cityName];
 };
 
-const getSubwayInfo = (cityName, cityAdcode) => {
-  return fetch(
-    `http://webapi.amap.com/subway/data/${cityAdcode}_drw_${cityName}.json?uid=1521018060609`
-  )
-    .then(response => {
-      return response.json();
-    })
-    .then(json => {
-      return json;
-    });
+const getSubwayInfo = async (cityName, cityAdcode) => {
+  return await (await fetch(`http://webapi.amap.com/subway/data/${cityAdcode}_drw_${cityName}.json?uid=1521018060609`)).json();
 };
 
 const getStationsCoordinates = subwayInfo => {
