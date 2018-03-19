@@ -7,7 +7,11 @@ npm i
 npm start
 ```
 
-## type keywords
+Then visit `http://127.0.0.1:8080/subway.html?city=<city_name>`
+
+e.g. http://127.0.0.1:8080/subway.html?city=nanjing
+
+## keywords
 
 - workday traffic
   - 商务写字楼
