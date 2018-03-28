@@ -24,7 +24,16 @@ const getStationsCoordinates = subwayInfo => {
   return stationsCoordinates;
 };
 
-const getStationsIndex = () => {};
+const getIndex = async ( coordinates, type ) => {
+  const data = await (await 
+    fetch(`http://restapi.amap.com/v3/place/around` +
+    `?key=4aa5a510995024236698da8491bd0b81` +
+    `&location=${coordinates}` +
+    `&types=${type}` +
+    `&radius=500` +
+    `&offset=25`)).json();
+  return data.count;
+};
 
 window.cbk = async () => {
   const cityName = getCityNameInUrl();
@@ -37,9 +46,16 @@ window.cbk = async () => {
     adcode: cityAdcode
   });
 
-  mySubway.event.on("station.touch", function(event, info) {
+  mySubway.event.on("station.touch", async (event, info) => {
     const id = info.id;
-    mySubway.stopAnimation();
+    mySubway.stopAnimation();    
+    const indicies = {
+      officeBuilding: await getIndex(stationsCoordinates[id], '商务写字楼'),
+      residential: await getIndex(stationsCoordinates[id], '住宅小区'),
+      touristAttractions: await getIndex(stationsCoordinates[id], '风景名胜'),
+      commerce: await getIndex(stationsCoordinates[id], '购物中心'),
+    }
+    console.log()
     mySubway.addInfoWindow(id, {
       content: 
       `
@@ -48,7 +64,11 @@ window.cbk = async () => {
           <span class="tip_name" id="tip_name">${info.name}</span>
         </div>
         <div class="tip_route">
-          <div>坐标: ${stationsCoordinates[id]}</div>
+          <p>坐标: ${stationsCoordinates[id]}</p>
+          <p>写字楼: ${indicies.officeBuilding}</p>
+          <p>住宅: ${indicies.residential}</p>
+          <p>景点: ${indicies.touristAttractions}</p>
+          <p>商业: ${indicies.commerce}</p>          
         </div>
       </div>
       `
