@@ -3,24 +3,29 @@ const canvas = new fabric.Canvas("canvas");
 // global
 const huhanrongY = 500;
 const jingguangX = 450;
+const lineOptions = {
+  strokeWidth: 6,
+  fill: '',
+  selectable: false,
+  hoverCursor: 'default',
+}
 
 const lines = [
   // 沪汉蓉
   new fabric.Path("M 0 0 L 800 0", { 
     stroke: "#00a19a",
-    strokeWidth: 6,
     originY: "center",
     left: 50,
     top: huhanrongY,
+    ...lineOptions,
   }),
   // 京广 + 哈大
   new fabric.Path('M 0 0 L 0 -600 L 200 -800', {
     stroke: "#dc1056",
-    strokeWidth: 6,
     originY: 'bottom',
     left: 450 - 3,
     top: 850,
-    fill: '',
+    ...lineOptions,
   })
 ];
 
@@ -34,7 +39,9 @@ const getCity = (x, y, color, name, scale = 1) => {
     top: y,
     originX: "center",
     originY: "center",
-    name: name
+    name: name,
+    selectable: false,
+    hoverCursor: 'pointer',
   });
 };
 
@@ -56,8 +63,28 @@ const cities = [
   
 ];
 
+const getText = (name, x, y) => {
+  return new fabric.Text(name, {
+    left: x,
+    top: y,
+    fontSize: 16,
+  });
+}
+
+const texts = [
+  getText('成都', 40, 510),
+  getText('重庆', 190, 510),
+  getText('武汉', 460, 510),
+  getText('合肥', 590, 510),
+  getText('南京', 690, 510),
+  getText('无锡', 740, 510),
+  getText('苏州', 790, 510),
+  getText('上海', 840, 510),
+]
+
 canvas.add(...lines);
 canvas.add(...cities);
+canvas.add(...texts);
 
 canvas.on("mouse:down", e => {
   if (e.target && e.target.name) {
