@@ -11,7 +11,7 @@ const getCityAdcode = async cityName => {
 };
 
 const getSubwayInfo = async (cityName, cityAdcode) => {
-  return await (await fetch(`http://webapi.amap.com/subway/data/${cityAdcode}_drw_${cityName}.json?uid=1521018060609`)).json();
+  return await (await fetch(`https://webapi.amap.com/subway/data/${cityAdcode}_drw_${cityName}.json?uid=1521018060609`)).json();
 };
 
 const getStationsCoordinates = subwayInfo => {
