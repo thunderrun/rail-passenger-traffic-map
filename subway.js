@@ -6,7 +6,7 @@ const getCityNameInUrl = () => {
 };
 
 const getCityAdcode = async cityName => {
-  const citiesAdcode = await (await fetch("/data/cityToAdcode.json")).json();
+  const citiesAdcode = await (await fetch("data/cityToAdcode.json")).json();
   return citiesAdcode[cityName];
 };
 
@@ -26,7 +26,7 @@ const getStationsCoordinates = subwayInfo => {
 
 const getIndex = async ( coordinates, type ) => {
   const data = await (await 
-    fetch(`http://restapi.amap.com/v3/place/around` +
+    fetch(`https://restapi.amap.com/v3/place/around` +
     `?key=4aa5a510995024236698da8491bd0b81` +
     `&location=${coordinates}` +
     `&types=${type}` +
