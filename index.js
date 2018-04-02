@@ -26,7 +26,21 @@ const lines = [
     left: 450 - 3,
     top: 850,
     ...lineOptions,
-  })
+  }),
+  // 天津
+  new fabric.Path('M 0 0 L 70 0 ', {
+    stroke: "#dc1056",
+    left: 450,
+    top: 250 - 2,
+    ...lineOptions,
+  }),
+  // 杭州
+  new fabric.Path('M 0 0 L 80 80 ', {
+    stroke: "#00a19a",
+    left: 700,
+    top: huhanrongY,
+    ...lineOptions,
+  }),
 ];
 
 const getCity = (x, y, color, name, scale = 1) => {
@@ -59,8 +73,18 @@ const cities = [
   // jingguang
   getCity(jingguangX, 850, "#dc1056", "shenzhen", 1.5),
   getCity(jingguangX, 800, "#dc1056", "guangzhou", 2),
-  getCity(jingguangX, 650, "#dc1056", "changsha", 1),  
-  
+  getCity(jingguangX, 650, "#dc1056", "changsha", 1),
+  getCity(jingguangX, 400, "#dc1056", "zhengzhou", 1),
+  getCity(jingguangX, 250, "#dc1056", "shijiazhuang", 1),
+  getCity(jingguangX + 50 - 3, 250 - 50, "#dc1056", "beijing", 2),  
+  getCity(jingguangX + 100 - 3, 250 - 100, "#dc1056", "shenyang", 1),  
+  getCity(jingguangX + 150 - 3, 250 - 150, "#dc1056", "changchun", 1),  
+  getCity(jingguangX + 200 - 3, 250 - 200, "#dc1056", "haerbin", 1),
+
+  // tianjin
+  getCity(jingguangX + 70, 250, "#dc1056", "tianjin", 1.5),
+  // hangzhou
+  getCity(700 + 80, huhanrongY + 80, "#00a19a", "hangzhou", 1.5),
 ];
 
 const getText = (name, x, y) => {
@@ -68,18 +92,35 @@ const getText = (name, x, y) => {
     left: x,
     top: y,
     fontSize: 16,
+    selectable: false,
+    hoverCursor: 'default',
   });
 }
 
 const texts = [
-  getText('成都', 40, 510),
-  getText('重庆', 190, 510),
-  getText('武汉', 460, 510),
-  getText('合肥', 590, 510),
-  getText('南京', 690, 510),
-  getText('无锡', 740, 510),
-  getText('苏州', 790, 510),
-  getText('上海', 840, 510),
+  // huhanrong
+  getText('成都', 40, huhanrongY + 10),
+  getText('重庆', 190, huhanrongY + 10),
+  getText('武汉', 460, huhanrongY + 10),
+  getText('合肥', 590, huhanrongY + 10),
+  getText('南京', 690, huhanrongY - 30),
+  getText('无锡', 740, huhanrongY + 10),
+  getText('苏州', 790, huhanrongY + 10),
+  getText('上海', 840, huhanrongY + 10),
+  // jingguang
+  getText('深圳', jingguangX + 15, 840),
+  getText('广州', jingguangX + 15, 790),
+  getText('长沙', jingguangX + 15, 640),
+  getText('郑州', jingguangX + 15, 390),
+  getText('石家庄', jingguangX + 15 - 75, 240),
+  getText('北京', jingguangX + 15 + 50, 240 - 50),
+  getText('沈阳', jingguangX + 10 + 100, 240 - 100),
+  getText('长春', jingguangX + 10 + 150, 240 - 150),
+  getText('哈尔滨', jingguangX + 10 + 200, 240 - 200), 
+
+  // branches
+  getText('天津', jingguangX + 85, 240),
+  getText('杭州', 795, huhanrongY + 70),  
 ]
 
 canvas.add(...lines);
