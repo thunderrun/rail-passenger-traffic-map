@@ -21,6 +21,7 @@
     "reload": "^2.2.2"
   },
   "dependencies": {
+    "@dagrejs/graphlib": "^2.1.4",
     "fabric": "^2.0.1"
   }
 }
