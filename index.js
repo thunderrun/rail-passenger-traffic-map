@@ -34,11 +34,18 @@ const lines = [
     top: 250 - 2,
     ...lineOptions,
   }),
-  // 杭州
+  // 宁杭
   new fabric.Path('M 0 0 L 80 80 ', {
     stroke: "#00a19a",
     left: 700,
     top: huhanrongY,
+    ...lineOptions,
+  }),
+  // 宁波
+  new fabric.Path('M 0 0 L 70 0 ', {
+    stroke: "#00a19a",
+    left: 780,
+    top: huhanrongY + 77,
     ...lineOptions,
   }),
 ];
@@ -60,7 +67,7 @@ const getCity = (x, y, color, name, scale = 1) => {
 };
 
 const cities = [
-  // huhanrong
+  // 沪汉蓉
   getCity(50, huhanrongY, "#00a19a", "chengdu", 1.5),
   getCity(200, huhanrongY, "#00a19a", "chongqing", 1.5),
   getCity(450, huhanrongY, "#00a19a", "wuhan", 1.5),
@@ -70,7 +77,7 @@ const cities = [
   getCity(800, huhanrongY, "#00a19a", "suzhou", 1.5),
   getCity(850, huhanrongY, "#00a19a", "shanghai", 2),
 
-  // jingguang
+  // 京广
   getCity(jingguangX, 850, "#dc1056", "shenzhen", 1.5),
   getCity(jingguangX, 800, "#dc1056", "guangzhou", 2),
   getCity(jingguangX, 650, "#dc1056", "changsha", 1),
@@ -81,10 +88,12 @@ const cities = [
   getCity(jingguangX + 150 - 3, 250 - 150, "#dc1056", "changchun", 1),  
   getCity(jingguangX + 200 - 3, 250 - 200, "#dc1056", "haerbin", 1),
 
-  // tianjin
+  // 天津
   getCity(jingguangX + 70, 250, "#dc1056", "tianjin", 1.5),
-  // hangzhou
+  // 杭州
   getCity(700 + 80, huhanrongY + 80, "#00a19a", "hangzhou", 1.5),
+  // 宁波
+  getCity(700 + 80 + 70, huhanrongY + 80, "#00a19a", "ningbo", 1),
 ];
 
 const getText = (name, x, y) => {
@@ -120,7 +129,9 @@ const texts = [
 
   // branches
   getText('天津', jingguangX + 85, 240),
-  getText('杭州', 795, huhanrongY + 70),  
+  getText('杭州', 770, huhanrongY + 95),
+  getText('宁波', 840, huhanrongY + 95),
+  
 ]
 
 canvas.add(...lines);

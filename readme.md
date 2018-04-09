@@ -9,17 +9,9 @@ https://thunderrun.github.io/rail-passenger-traffic-map/
 npm i
 npm start
 ```
+Then visit `http://127.0.0.1:8080/`
 
-Then visit `http://127.0.0.1:8080/subway.html?city=<city_name>`
+## Traffic Keywords
 
-e.g. http://127.0.0.1:8080/subway.html?city=nanjing
-
-## keywords
-
-- workday traffic
-  - 商务写字楼
-  - 住宅小区
-
-- weekend traffic
-  - 风景名胜
-  - 购物中心
+- 商务写字楼
+- 住宅小区
