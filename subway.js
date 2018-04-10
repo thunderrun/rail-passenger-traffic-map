@@ -24,9 +24,8 @@ const getStationsCoordinates = subwayInfo => {
   return stationsCoordinates;
 };
 
-const getIndex = async ( coordinates, type ) => {
-  const data = await (await 
-    fetch(`https://restapi.amap.com/v3/place/around` +
+const getIndex = async (coordinates, type) => {
+  const data = await (await fetch(`https://restapi.amap.com/v3/place/around` +
     `?key=4aa5a510995024236698da8491bd0b81` +
     `&location=${coordinates}` +
     `&types=${type}` +
@@ -36,6 +35,7 @@ const getIndex = async ( coordinates, type ) => {
 };
 
 window.cbk = async () => {
+
   const cityName = getCityNameInUrl();
   const cityAdcode = await getCityAdcode(cityName);
   const subwayInfo = await getSubwayInfo(cityName, cityAdcode);
@@ -46,9 +46,19 @@ window.cbk = async () => {
     adcode: cityAdcode
   });
 
+  let scale = 1;
+  mySubway.event.on("wheel", (e) => {
+    if(e.deltaY > 0 && scale > 0.51){
+      scale -= 0.1;
+    }else if (e.deltaY < 0 && scale < 1.29){
+      scale += 0.1;
+    }
+    mySubway.scale(scale);
+  });
+
   mySubway.event.on("station.touch", async (event, info) => {
     const id = info.id;
-    mySubway.stopAnimation();    
+    mySubway.stopAnimation();
     const indicies = {
       officeBuilding: await getIndex(stationsCoordinates[id], '商务写字楼'),
       residential: await getIndex(stationsCoordinates[id], '住宅小区'),
@@ -57,8 +67,7 @@ window.cbk = async () => {
     }
     console.log()
     mySubway.addInfoWindow(id, {
-      content: 
-      `
+      content: `
       <div class="tip_bady">
         <div class="tip_name_detail">
           <span class="tip_name" id="tip_name">${info.name}</span>
