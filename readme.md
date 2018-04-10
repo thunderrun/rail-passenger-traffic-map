@@ -4,6 +4,11 @@
 Demo:  
 https://thunderrun.github.io/rail-passenger-traffic-map/
 
+## Resources
+
+- [铁路迷Railwayfan《中国高铁线路图2018春运版》](https://weibo.com/tielumi)
+- [高德地图Web API](https://lbs.amap.com/)
+
 ## Todo
 
 - traffic map
