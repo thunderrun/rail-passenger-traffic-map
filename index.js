@@ -1,5 +1,18 @@
 (async () => {
-  const railwayMap = document.getElementById('map');
+  const railwayMap = document.querySelector('#map');
+
+  const cities = await (await fetch('data/cities.json')).json();
+  let mapHtml = '';
+  cities.forEach(city => {
+    mapHtml += 
+    `
+      <a target="_blank" href="subway.html?city=${city.en}">
+        <circle cx="${city.x}" cy="${city.y}" r="${city.radius}" fill="#044B94" fill-opacity="0.1"/>
+      </a>
+    `
+  });
+  railwayMap.innerHTML += mapHtml;
+
   panzoom(railwayMap, {
     smoothScroll: false,
   }).zoomAbs(
@@ -7,39 +20,5 @@
     0, // initial y position
     0.3 // initial zoom 
   );
-
-  function FindPosition(oElement) {
-    if (typeof (oElement.offsetParent) != "undefined") {
-      for (var posX = 0, posY = 0; oElement; oElement = oElement.offsetParent) {
-        posX += oElement.offsetLeft;
-        posY += oElement.offsetTop;
-      }
-      return [posX, posY];
-    } else {
-      return [oElement.x, oElement.y];
-    }
-  }
-
-  function getCoordinates(e) {
-    var PosX = 0;
-    var PosY = 0;
-    var ImgPos;
-    ImgPos = FindPosition(railwayMap);
-    if (!e) var e = window.event;
-    if (e.pageX || e.pageY) {
-      PosX = e.pageX;
-      PosY = e.pageY;
-    } else if (e.clientX || e.clientY) {
-      PosX = e.clientX + document.body.scrollLeft +
-        document.documentElement.scrollLeft;
-      PosY = e.clientY + document.body.scrollTop +
-        document.documentElement.scrollTop;
-    }
-    PosX = PosX - ImgPos[0];
-    PosY = PosY - ImgPos[1];
-    console.log(`x: ${PosX}, y: ${PosY}`);
-  }
-
-  railwayMap.onmousedown = getCoordinates;
 
 })();

@@ -14,18 +14,22 @@
       margin: 0;
       background-color: #f4f5f5;
     }
-    area {
-      color: blue;
-      background-color: blue;
+    circle {
+      cursor: pointer;
     }
   </style>
 </head>
 
 <body>
-  <img id="map" src="dist/EMURailwayMap.png" usemap="#railmap" onclick="click">
-  <map name="railmap">
-    <!-- <area shape="circle" coords="4431, 3225, 100" href="subway.html?city=nanjing"> -->
-  </map>
+  <!-- width="1920" height="1080" -->
+  <svg width="1920" height="1080">
+    <g id="map">
+      <image xlink:href="dist/EMURailwayMap.png"></image>
+    </g>
+  </svg>
+  <!-- <img id="map" src="dist/EMURailwayMap.png" usemap="#railmap" onclick="click"> -->
+  <!-- <map name="railmap">
+  </map> -->
   <script src="index.js"></script>
 </body>
 
