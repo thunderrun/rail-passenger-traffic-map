@@ -1,7 +1,12 @@
-# Rail passenger traffic map
+# China EMU Passenger Transit Route Map 
+中国动车组(含地铁)客运线路图
 
 Demo:  
 https://thunderrun.github.io/rail-passenger-traffic-map/
+
+## Todo
+
+- traffic map
 
 ## Development
 
