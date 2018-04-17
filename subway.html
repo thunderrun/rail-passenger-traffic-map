@@ -1,7 +1,9 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no"
+  />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script type="text/javascript" src="https://webapi.amap.com/subway?v=1.0&amp;key=75139a7d0e35241fa3f421fbd3a2b423&amp;callback=cbk"></script>
   <title>Subway</title>
@@ -9,13 +11,38 @@
     .tip_route {
       padding: 4px;
     }
-    .tip_route p{
+
+    .tip_route p {
       margin-bottom: 4px;
+    }
+
+    .map-mode {
+      position: absolute;
+      z-index: 99;
     }
   </style>
 </head>
+
 <body>
-  <div id="mysubway"></div> 
+  <div class="map-mode">
+    <span>Map Mode: </span>
+    <span>
+      <a href="#route" onclick="location.reload()">Route</a>
+    </span>/
+    <span>
+      <a href="#data" onclick="location.reload()">Data</a>
+    </span>/
+    <span>
+      <a href="#traffic" onclick="location.reload()">Traffic</a>
+    </span>/
+    <span>
+      <a href="#regular" onclick="redirectToAmap()">Regular</a>
+    </span>/
+  </div>
+  <div id="mysubway">
+  </div>
   <script src="subway.js"></script>
+  <script src="fetchTrafficData.js"></script>
 </body>
+
 </html>

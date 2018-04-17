@@ -6,7 +6,7 @@
   cities.forEach(city => {
     mapHtml += 
     `
-      <a target="_blank" href="subway.html?city=${city.en}">
+      <a target="_blank" href="subway.html?city=${city.en}#data">
         <circle cx="${city.x}" cy="${city.y}" r="${city.radius}" fill="#044B94" fill-opacity="0.1"/>
       </a>
     `
