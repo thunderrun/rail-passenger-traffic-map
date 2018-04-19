@@ -9,24 +9,20 @@ const downloadFile = (content, fileName, contentType) => {
 }
 
 const getTraffic = async (subwayInfo) => {
-
-  subwayInfo.l.forEach(async (line, lineIndex) => {
-    let stationIndex = 0;
-
-    const timeout = async () => {
-      let timeoutId = setTimeout( async () => {
-          subwayInfo.l[lineIndex].st[stationIndex].officeBuilding = await getIndex(line.st[stationIndex].sl, '商务写字楼');
-          subwayInfo.l[lineIndex].st[stationIndex].residential = await getIndex(line.st[stationIndex].sl, '住宅小区');   
-          stationIndex++;
-          if(stationInex >= line.st.length ){
-            clearTimeout(timeoutId);
-          }
-          timeout();
-      }, 1000);
-    };
-    
-    timeout();
-  });
-  // downloadFile(JSON.stringify(subwayInfo), 'wuxi.json', 'application/json; charset=utf-8');
+  let lineIndex = 0;
+  let stationIndex = 0;
+  let timer = setInterval(async () => {
+    subwayInfo.l[lineIndex].st[stationIndex].officeBuilding = await getIndex(subwayInfo.l[lineIndex].st[stationIndex].sl, '商务写字楼');
+    subwayInfo.l[lineIndex].st[stationIndex].residential = await getIndex(subwayInfo.l[lineIndex].st[stationIndex].sl, '住宅小区');
+    stationIndex++;
+    if (stationIndex >= subwayInfo.l[lineIndex].st.length) {
+      stationIndex = 0;
+      lineIndex++;
+      if (lineIndex >= subwayInfo.l.length) {
+        downloadFile(JSON.stringify(subwayInfo), `${subwayInfo.i}.json`, 'application/json; charset=utf-8');
+        clearInterval(timer);        
+      }
+    }
+  }, 1000);
 
 }
