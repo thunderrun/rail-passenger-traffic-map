@@ -103,7 +103,7 @@ window.cbk = async () => {
   }
 
   if (mapMode === 'traffic') {
-    const response = await fetch(`/data/${cityAdcode}.json`);
+    const response = await fetch(`data/${cityAdcode}.json`);
     if ( response.status === 404) {
       document.querySelector('.fetch-data').innerHTML = `Traffic data not avaliable, <a href="#traffic" onclick="fetchTraffic()" >start fetching data</a>`;
     } else {
