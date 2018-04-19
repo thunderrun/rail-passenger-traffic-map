@@ -20,6 +20,7 @@ const getTraffic = async (subwayInfo) => {
       lineIndex++;
       if (lineIndex >= subwayInfo.l.length) {
         downloadFile(JSON.stringify(subwayInfo), `${subwayInfo.i}.json`, 'application/json; charset=utf-8');
+        document.querySelector('.fetch-data').innerHTML = `Data fetched and saved, please paste the file into data folder`;
         clearInterval(timer);        
       }
     }

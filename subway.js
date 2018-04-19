@@ -42,12 +42,15 @@ const redirectToAmap = async () => {
   location.href = `http://map.amap.com/subway/index.html?&${cityAdcode}`;
 }
 
+let subwayInfoGlobal = {};
+
 window.cbk = async () => {
 
   const cityName = getUrlParam('city');
   const cityAdcode = await getCityAdcode(cityName);
   const mapMode = location.hash.slice(1);
   const subwayInfo = await getSubwayInfo(cityName, cityAdcode);
+  subwayInfoGlobal = subwayInfo;
   const stationsCoordinates = getStationsCoordinates(subwayInfo);
 
   const mySubway = subway("mySubway", {
@@ -100,7 +103,16 @@ window.cbk = async () => {
   }
 
   if (mapMode === 'traffic') {
-    getTraffic(subwayInfo);
+    const response = await fetch(`/data/${cityAdcode}.json`);
+    if ( response.status === 404) {
+      document.querySelector('.fetch-data').innerHTML = `Traffic data not avaliable, <a href="#traffic" onclick="fetchTraffic()" >start fetching data</a>`;
+    } else {
+      document.querySelector('.fetch-data').innerHTML = `Data avaliable, generating map`;
+    }
   }
+}
 
-};
+const fetchTraffic = () => {
+  document.querySelector('.fetch-data').innerHTML = `Fetching...`;
+  getTraffic(subwayInfoGlobal);
+}
