@@ -12,6 +12,9 @@ https://thunderrun.github.io/rail-passenger-traffic-map/
 ## Todo
 
 - traffic map
+    - draw the map
+    - caculate line and width
+    - modify line width
 
 ## Development
 

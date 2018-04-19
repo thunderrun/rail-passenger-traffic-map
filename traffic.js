@@ -1,5 +1,5 @@
 (async () =>{
-  const data = await (await fetch('data/nanjing.json')).json();
+  const data = await (await fetch('data/3202.json')).json();
   const g = new graphlib.Graph({
     directed: false,
   });
@@ -26,7 +26,7 @@
 
   console.log(g.edges());
 
-  const maps = graphlib.alg.dijkstra(g, "南京南站", undefined, (v) => { return g.nodeEdges(v); });
+  const maps = graphlib.alg.dijkstra(g, "无锡火车站", undefined, (v) => { return g.nodeEdges(v); });
 
   console.log(maps)
   
