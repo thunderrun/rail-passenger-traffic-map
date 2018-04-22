@@ -36,18 +36,15 @@ const getIndex = async (coordinates, type) => {
   return data.count;
 };
 
-const redirectToAmap = async () => {
-  const cityName = getUrlParam('city');
-  const cityAdcode = await getCityAdcode(cityName);
-  location.href = `http://map.amap.com/subway/index.html?&${cityAdcode}`;
-}
-
 let subwayInfoGlobal = {};
 
 window.cbk = async () => {
 
   const cityName = getUrlParam('city');
   const cityAdcode = await getCityAdcode(cityName);
+
+  document.querySelector('#regular').href = `http://map.amap.com/subway/index.html?&${cityAdcode}`;
+
   const mapMode = location.hash.slice(1);
   const subwayInfo = await getSubwayInfo(cityName, cityAdcode);
   subwayInfoGlobal = subwayInfo;
@@ -108,6 +105,7 @@ window.cbk = async () => {
       document.querySelector('.fetch-data').innerHTML = `Traffic data not avaliable, <a href="#traffic" onclick="fetchTraffic()" >start fetching data</a>`;
     } else {
       document.querySelector('.fetch-data').innerHTML = `Data avaliable, generating map`;
+      window.open(`traffic.html?&${cityAdcode}`);
     }
   }
 }
