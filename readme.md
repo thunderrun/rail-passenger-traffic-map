@@ -4,17 +4,18 @@
 Demo:  
 https://thunderrun.github.io/rail-passenger-traffic-map/
 
+## BUG
+
+- 如果地铁图没有正常显示, 请手动刷新一下
+
 ## Resources
 
 - [铁路迷Railwayfan《中国高铁线路图2018春运版》](https://weibo.com/tielumi)
 - [高德地图Web API](https://lbs.amap.com/)
 
-## Todo
+## In progress
 
 - traffic map
-    - draw the map
-    - caculate line and width
-    - modify line width
 
 ## Development
 
