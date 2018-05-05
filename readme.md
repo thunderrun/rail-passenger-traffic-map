@@ -6,7 +6,7 @@ https://thunderrun.github.io/rail-passenger-traffic-map/
 
 ## BUG
 
-- 如果地铁图没有正常显示, 请手动刷新一下
+- 如果地铁图没有正常显示, 请手动刷新一次
 
 ## Resources
 
