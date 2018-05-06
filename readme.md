@@ -5,7 +5,9 @@ Demo:
 https://thunderrun.github.io/rail-passenger-traffic-map/
 
 - 如果地铁图没有正常显示, 请手动刷新一次
-- 地铁客流图目前仅完成无锡、苏州
+- 地铁客流图已完成:
+    - [无锡](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=wuxi#route)
+    - [苏州](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=suzhou#route)
 
 ## Resources
 
