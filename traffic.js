@@ -168,6 +168,15 @@ const matchCoordinates = (coordinatesA, coordinatesB, deviation = 2) => {
     stations.forEach((station) => {
       addStationToSvg(station, map, line.cl);      
     })
-  })
+  });
+
+  // enable panzoom
+  panzoom(map, {
+    smoothScroll: false,
+  }).zoomAbs(
+    0, // initial x position
+    0, // initial y position
+    0.5 // initial zoom 
+  );
 
 })();
