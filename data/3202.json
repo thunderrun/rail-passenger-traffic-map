@@ -133,7 +133,7 @@
             "t": "0",
             "su": "1",
             "officeBuilding": "3",
-            "residential": "1"
+            "residential": "15"
         }, {
             "si": "32020016",
             "sid": "320200021335010",
@@ -401,7 +401,7 @@
             "t": "0",
             "su": "1",
             "officeBuilding": "5",
-            "residential": "0"
+            "residential": "5"
         }, {
             "si": "32020044",
             "sid": "900000029090002",
