@@ -5,9 +5,11 @@ Demo:
 https://thunderrun.github.io/rail-passenger-traffic-map/
 
 - 如果地铁图没有正常显示, 请手动刷新一次
-- 地铁客流图已完成:
+- 地铁客流图已完成如下城市:
     - [无锡](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=wuxi#route)
     - [苏州](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=suzhou#route)
+    - [南京](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=nanjing#route)
+    
 
 ## Resources
 
@@ -27,8 +29,11 @@ Then visit `http://127.0.0.1:8080/`
 - 商务写字楼
 - 住宅小区
 
-火车站客流设为住宅小区, 数据如下
-- 无锡: 15
+火车站及其他特殊客流站点客流设为住宅小区, 数据如下
+- 无锡: 15 (沪宁城际)
 - 无锡东: 2
-- 苏州: 25
+- 苏州: 25 (沪宁城际)
 - 苏州北: 5
+- 南京: 35 (沪宁城际 + 宁启城际)
+- 南京南: 10 (宁安城际)
+- 高淳: 5
