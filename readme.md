@@ -9,6 +9,7 @@ https://thunderrun.github.io/rail-passenger-traffic-map/
     - [无锡](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=wuxi#route)
     - [苏州](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=suzhou#route)
     - [南京](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=nanjing#route)
+    - [合肥](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=hefei#route)
     
 
 ## Resources
