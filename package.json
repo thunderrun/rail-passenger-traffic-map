@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "reload"
+    "dev": "reload",
+    "start": "http-server ."
   },
   "repository": {
     "type": "git",
@@ -18,11 +19,11 @@
   },
   "homepage": "https://github.com/thunderrun/rail-passenger-traffic-map#readme",
   "devDependencies": {
+    "http-server": "^0.11.1",
     "reload": "^2.2.2"
   },
   "dependencies": {
     "@dagrejs/graphlib": "^2.1.4",
-    "fabric": "^2.0.1",
     "panzoom": "^4.5.0"
   }
 }

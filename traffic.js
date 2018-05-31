@@ -1,3 +1,22 @@
+let firstChange = true;
+let linesElements = [];
+let originStrokeWidth = [];
+
+const changeLineWidth = (scale) => {
+  if (firstChange === true ){
+    linesElements = document.querySelectorAll('#passenger-flow');
+    linesElements.forEach((line, index) => {
+      originStrokeWidth[index] = parseInt(line.style['stroke-width'].slice(0, -2));
+      line.style['stroke-width'] = `${originStrokeWidth[index] * scale}px`; 
+    });
+    firstChange = false;
+  }else {
+    linesElements.forEach((line, index) => {
+      line.style['stroke-width'] = `${originStrokeWidth[index] * scale}px`;
+    });
+  }
+}
+
 const generateSvgPathString = (coordinatesArray) => {
   let string = '';
   coordinatesArray.forEach((coordinates, index) => {
@@ -159,7 +178,7 @@ const matchCoordinates = (coordinatesA, coordinatesB, deviation = 2) => {
   // draw traffic map
   edges.forEach(edge => {
     let pathString = generateSvgPathString(edge.path);
-    map.innerHTML += `<path d="${pathString}" style="stroke: #${edge.color}; stroke-width: ${edge.traffic * 0.002}px;"/>`;
+    map.innerHTML += `<path id="passenger-flow" d="${pathString}" style="stroke: #${edge.color}; stroke-width: ${edge.traffic * 0.002}px;"/>`;
   });
 
   // draw metro stations

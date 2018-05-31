@@ -10,8 +10,8 @@ https://thunderrun.github.io/rail-passenger-traffic-map/
     - [苏州](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=suzhou#route)
     - [南京](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=nanjing#route)
     - [合肥](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=hefei#route)
+    - [杭州](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=hangzhou#route)
     
-
 ## Resources
 
 - [铁路迷Railwayfan《中国高铁线路图2018春运版》](https://weibo.com/tielumi)
@@ -19,8 +19,8 @@ https://thunderrun.github.io/rail-passenger-traffic-map/
 
 ## Development
 
-```bash
-npm i
+```
+npm i 
 npm start
 ```
 Then visit `http://127.0.0.1:8080/`
@@ -38,3 +38,5 @@ Then visit `http://127.0.0.1:8080/`
 - 南京: 35 (沪宁城际 + 宁启城际)
 - 南京南: 10 (宁安城际)
 - 高淳: 5
+- 汉口: 5 (武孝)
+- 武昌: 5 (武黄、武咸)
