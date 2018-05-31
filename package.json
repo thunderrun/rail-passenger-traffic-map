@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@dagrejs/graphlib": "^2.1.4",
+    "json2xls": "^0.1.2",
     "panzoom": "^4.5.0"
   }
 }

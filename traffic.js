@@ -198,4 +198,12 @@ const matchCoordinates = (coordinatesA, coordinatesB, deviation = 2) => {
     0.5 // initial zoom 
   );
 
+  document.querySelector('#export-data').onclick = () => {
+    let exportData = [];
+    edges.forEach((edge)=>{
+      exportData.push({startStation: edge.startStation, endStation: edge.endStation, traffic: edge.traffic});
+    })
+    console.log(exportData);
+  }
+
 })();

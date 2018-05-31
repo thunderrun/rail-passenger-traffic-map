@@ -1,0 +1,621 @@
+[{
+    "startStation": "禄口机场",
+    "endStation": "翔宇路南",
+    "traffic": 0
+}, {
+    "startStation": "翔宇路南",
+    "endStation": "翔宇路北",
+    "traffic": 199.72251488648078
+}, {
+    "startStation": "翔宇路北",
+    "endStation": "正方中路",
+    "traffic": 199.72251488648078
+}, {
+    "startStation": "正方中路",
+    "endStation": "吉印大道",
+    "traffic": 199.72251488648078
+}, {
+    "startStation": "吉印大道",
+    "endStation": "河海大学·佛城西路",
+    "traffic": 199.72251488648078
+}, {
+    "startStation": "河海大学·佛城西路",
+    "endStation": "翠屏山",
+    "traffic": 503.79235211091225
+}, {
+    "startStation": "翠屏山",
+    "endStation": "南京南站",
+    "traffic": 913.2825257780999
+}, {
+    "startStation": "中国药科大学",
+    "endStation": "南京交院",
+    "traffic": 177.15656234533324
+}, {
+    "startStation": "南京交院",
+    "endStation": "南医大·江苏经贸学院",
+    "traffic": 430.0995310723056
+}, {
+    "startStation": "南医大·江苏经贸学院",
+    "endStation": "龙眠大道",
+    "traffic": 469.2357434239259
+}, {
+    "startStation": "龙眠大道",
+    "endStation": "天印大道",
+    "traffic": 703.1228599885428
+}, {
+    "startStation": "天印大道",
+    "endStation": "竹山路",
+    "traffic": 1546.3479558788986
+}, {
+    "startStation": "竹山路",
+    "endStation": "小龙湾",
+    "traffic": 2235.5507046672087
+}, {
+    "startStation": "小龙湾",
+    "endStation": "百家湖",
+    "traffic": 2357.352106812276
+}, {
+    "startStation": "百家湖",
+    "endStation": "胜太路",
+    "traffic": 2753.628602002966
+}, {
+    "startStation": "胜太路",
+    "endStation": "河定桥",
+    "traffic": 3845.555955929392
+}, {
+    "startStation": "河定桥",
+    "endStation": "双龙大道",
+    "traffic": 4312.800119758916
+}, {
+    "startStation": "双龙大道",
+    "endStation": "南京南站",
+    "traffic": 4875.736622990445
+}, {
+    "startStation": "南京南站",
+    "endStation": "花神庙",
+    "traffic": 5075.076011397068
+}, {
+    "startStation": "花神庙",
+    "endStation": "软件大道",
+    "traffic": 5238.40205704864
+}, {
+    "startStation": "软件大道",
+    "endStation": "天隆寺",
+    "traffic": 5660.055768761113
+}, {
+    "startStation": "天隆寺",
+    "endStation": "安德门",
+    "traffic": 5859.514851802709
+}, {
+    "startStation": "安德门",
+    "endStation": "中华门",
+    "traffic": 11287.187399965447
+}, {
+    "startStation": "中华门",
+    "endStation": "三山街",
+    "traffic": 12223.509475392593
+}, {
+    "startStation": "三山街",
+    "endStation": "张府园",
+    "traffic": 15527.082329029885
+}, {
+    "startStation": "张府园",
+    "endStation": "新街口",
+    "traffic": 22031.050978340052
+}, {
+    "startStation": "新街口",
+    "endStation": "珠江路",
+    "traffic": 21451.670077868897
+}, {
+    "startStation": "珠江路",
+    "endStation": "鼓楼",
+    "traffic": 18539.58357143364
+}, {
+    "startStation": "鼓楼",
+    "endStation": "玄武门",
+    "traffic": 9610.586308198597
+}, {
+    "startStation": "玄武门",
+    "endStation": "新模范马路",
+    "traffic": 6953.754874228233
+}, {
+    "startStation": "新模范马路",
+    "endStation": "南京站",
+    "traffic": 6137.822124991336
+}, {
+    "startStation": "南京站",
+    "endStation": "红山动物园",
+    "traffic": 3750.485310350237
+}, {
+    "startStation": "红山动物园",
+    "endStation": "迈皋桥",
+    "traffic": 2333.983957764729
+}, {
+    "startStation": "油坊桥",
+    "endStation": "雨润大街",
+    "traffic": 2777.786660797776
+}, {
+    "startStation": "雨润大街",
+    "endStation": "元通",
+    "traffic": 3345.1756251096785
+}, {
+    "startStation": "元通",
+    "endStation": "奥体东",
+    "traffic": 2506.8931058165763
+}, {
+    "startStation": "奥体东",
+    "endStation": "兴隆大街",
+    "traffic": 3049.2301919596216
+}, {
+    "startStation": "兴隆大街",
+    "endStation": "集庆门大街",
+    "traffic": 3562.8321990365757
+}, {
+    "startStation": "集庆门大街",
+    "endStation": "云锦路",
+    "traffic": 4955.662803465202
+}, {
+    "startStation": "云锦路",
+    "endStation": "莫愁湖",
+    "traffic": 6303.359335868693
+}, {
+    "startStation": "莫愁湖",
+    "endStation": "汉中门",
+    "traffic": 7658.378119384919
+}, {
+    "startStation": "汉中门",
+    "endStation": "上海路",
+    "traffic": 10321.27736255606
+}, {
+    "startStation": "上海路",
+    "endStation": "新街口",
+    "traffic": 15788.894876457232
+}, {
+    "startStation": "新街口",
+    "endStation": "大行宫",
+    "traffic": 27696.308744141585
+}, {
+    "startStation": "大行宫",
+    "endStation": "西安门",
+    "traffic": 9494.301657026748
+}, {
+    "startStation": "西安门",
+    "endStation": "明故宫",
+    "traffic": 7065.129819726842
+}, {
+    "startStation": "明故宫",
+    "endStation": "苜蓿园",
+    "traffic": 5391.980479434533
+}, {
+    "startStation": "苜蓿园",
+    "endStation": "下马坊",
+    "traffic": 3567.714893165871
+}, {
+    "startStation": "下马坊",
+    "endStation": "孝陵卫",
+    "traffic": 2439.936758574884
+}, {
+    "startStation": "孝陵卫",
+    "endStation": "钟灵街",
+    "traffic": 1333.3881627136388
+}, {
+    "startStation": "钟灵街",
+    "endStation": "马群",
+    "traffic": 794.8802859119685
+}, {
+    "startStation": "马群",
+    "endStation": "金马路",
+    "traffic": 546.5459248213018
+}, {
+    "startStation": "金马路",
+    "endStation": "仙鹤门",
+    "traffic": 439.9184866829916
+}, {
+    "startStation": "仙鹤门",
+    "endStation": "学则路",
+    "traffic": 275.69055129364494
+}, {
+    "startStation": "学则路",
+    "endStation": "仙林中心",
+    "traffic": 175.56379404200504
+}, {
+    "startStation": "仙林中心",
+    "endStation": "羊山公园",
+    "traffic": 83.13460449067112
+}, {
+    "startStation": "羊山公园",
+    "endStation": "南大仙林校区",
+    "traffic": 40.170288387158124
+}, {
+    "startStation": "南大仙林校区",
+    "endStation": "经天路",
+    "traffic": 0
+}, {
+    "startStation": "高家冲",
+    "endStation": "林山",
+    "traffic": 0
+}, {
+    "startStation": "林山",
+    "endStation": "桥林新城",
+    "traffic": 29.780094358570285
+}, {
+    "startStation": "桥林新城",
+    "endStation": "石碛河",
+    "traffic": 29.780094358570285
+}, {
+    "startStation": "石碛河",
+    "endStation": "双垅",
+    "traffic": 29.780094358570285
+}, {
+    "startStation": "双垅",
+    "endStation": "兰花塘",
+    "traffic": 29.780094358570285
+}, {
+    "startStation": "兰花塘",
+    "endStation": "马骡圩",
+    "traffic": 29.780094358570285
+}, {
+    "startStation": "马骡圩",
+    "endStation": "刘村",
+    "traffic": 29.780094358570285
+}, {
+    "startStation": "刘村",
+    "endStation": "天保",
+    "traffic": 88.54164388073956
+}, {
+    "startStation": "天保",
+    "endStation": "高庙路",
+    "traffic": 132.39366337049339
+}, {
+    "startStation": "高庙路",
+    "endStation": "吴侯街",
+    "traffic": 275.0205197798327
+}, {
+    "startStation": "吴侯街",
+    "endStation": "平良大街",
+    "traffic": 275.0205197798327
+}, {
+    "startStation": "平良大街",
+    "endStation": "永初路",
+    "traffic": 275.0205197798327
+}, {
+    "startStation": "永初路",
+    "endStation": "油坊桥",
+    "traffic": 402.7452617642432
+}, {
+    "startStation": "油坊桥",
+    "endStation": "贾西",
+    "traffic": 1807.7891924095327
+}, {
+    "startStation": "贾西",
+    "endStation": "春江路",
+    "traffic": 1499.5723564220905
+}, {
+    "startStation": "春江路",
+    "endStation": "铁心桥",
+    "traffic": 1473.2095371273576
+}, {
+    "startStation": "铁心桥",
+    "endStation": "景明佳园",
+    "traffic": 1746.0260734194205
+}, {
+    "startStation": "景明佳园",
+    "endStation": "南京南站",
+    "traffic": 1892.4142147475388
+}, {
+    "startStation": "秣周东路",
+    "endStation": "东大九龙湖校区",
+    "traffic": 270.7891475327053
+}, {
+    "startStation": "东大九龙湖校区",
+    "endStation": "诚信大道",
+    "traffic": 360.0784313484916
+}, {
+    "startStation": "诚信大道",
+    "endStation": "九龙湖",
+    "traffic": 711.4378210882195
+}, {
+    "startStation": "九龙湖",
+    "endStation": "天元西路",
+    "traffic": 1137.531822406455
+}, {
+    "startStation": "天元西路",
+    "endStation": "胜太西路",
+    "traffic": 1575.5876076665343
+}, {
+    "startStation": "胜太西路",
+    "endStation": "宏运大道",
+    "traffic": 2561.9999068908774
+}, {
+    "startStation": "宏运大道",
+    "endStation": "南京南站",
+    "traffic": 2683.6823457323185
+}, {
+    "startStation": "南京南站",
+    "endStation": "明发广场",
+    "traffic": 3798.971250534138
+}, {
+    "startStation": "明发广场",
+    "endStation": "大明路",
+    "traffic": 3813.0806753650004
+}, {
+    "startStation": "大明路",
+    "endStation": "卡子门",
+    "traffic": 3995.1587678099318
+}, {
+    "startStation": "卡子门",
+    "endStation": "雨花门",
+    "traffic": 4484.594048817036
+}, {
+    "startStation": "雨花门",
+    "endStation": "武定门",
+    "traffic": 5286.378076481831
+}, {
+    "startStation": "武定门",
+    "endStation": "夫子庙",
+    "traffic": 7421.569393573456
+}, {
+    "startStation": "夫子庙",
+    "endStation": "常府街",
+    "traffic": 10970.190914988965
+}, {
+    "startStation": "常府街",
+    "endStation": "大行宫",
+    "traffic": 16919.537993268033
+}, {
+    "startStation": "大行宫",
+    "endStation": "浮桥",
+    "traffic": 15102.537879407593
+}, {
+    "startStation": "浮桥",
+    "endStation": "鸡鸣寺",
+    "traffic": 12454.196646365972
+}, {
+    "startStation": "鸡鸣寺",
+    "endStation": "南京林业大学·新庄",
+    "traffic": 8258.448986368383
+}, {
+    "startStation": "南京林业大学·新庄",
+    "endStation": "南京站",
+    "traffic": 7918.106684856985
+}, {
+    "startStation": "南京站",
+    "endStation": "小市",
+    "traffic": 6109.647443713916
+}, {
+    "startStation": "小市",
+    "endStation": "五塘广场",
+    "traffic": 4930.993080763414
+}, {
+    "startStation": "五塘广场",
+    "endStation": "上元门",
+    "traffic": 3877.456879020209
+}, {
+    "startStation": "上元门",
+    "endStation": "柳洲东路",
+    "traffic": 3700.1488501356666
+}, {
+    "startStation": "柳洲东路",
+    "endStation": "天润城",
+    "traffic": 3452.590579293214
+}, {
+    "startStation": "天润城",
+    "endStation": "泰冯路",
+    "traffic": 3146.651237453419
+}, {
+    "startStation": "泰冯路",
+    "endStation": "东大成贤学院",
+    "traffic": 925.1632696953084
+}, {
+    "startStation": "东大成贤学院",
+    "endStation": "星火路",
+    "traffic": 569.133474849232
+}, {
+    "startStation": "星火路",
+    "endStation": "林场",
+    "traffic": 109.59047116150369
+}, {
+    "startStation": "龙江",
+    "endStation": "草场门·南艺·二师",
+    "traffic": 2982.086113993793
+}, {
+    "startStation": "草场门·南艺·二师",
+    "endStation": "云南路",
+    "traffic": 4286.048299722618
+}, {
+    "startStation": "云南路",
+    "endStation": "鼓楼",
+    "traffic": 9423.273303567912
+}, {
+    "startStation": "鼓楼",
+    "endStation": "鸡鸣寺",
+    "traffic": 3939.5517467462546
+}, {
+    "startStation": "鸡鸣寺",
+    "endStation": "九华山",
+    "traffic": 5319.728289201789
+}, {
+    "startStation": "九华山",
+    "endStation": "岗子村",
+    "traffic": 3422.7283310477446
+}, {
+    "startStation": "岗子村",
+    "endStation": "蒋王庙",
+    "traffic": 2448.478160354006
+}, {
+    "startStation": "蒋王庙",
+    "endStation": "王家湾",
+    "traffic": 1702.448489328725
+}, {
+    "startStation": "王家湾",
+    "endStation": "聚宝山",
+    "traffic": 1185.567223494617
+}, {
+    "startStation": "聚宝山",
+    "endStation": "徐庄·苏宁总部",
+    "traffic": 815.4824934538652
+}, {
+    "startStation": "徐庄·苏宁总部",
+    "endStation": "金马路",
+    "traffic": 410.5315308773123
+}, {
+    "startStation": "金马路",
+    "endStation": "汇通路",
+    "traffic": 0
+}, {
+    "startStation": "汇通路",
+    "endStation": "灵山",
+    "traffic": 0
+}, {
+    "startStation": "灵山",
+    "endStation": "东流",
+    "traffic": 0
+}, {
+    "startStation": "东流",
+    "endStation": "孟北",
+    "traffic": 0
+}, {
+    "startStation": "孟北",
+    "endStation": "西岗桦墅",
+    "traffic": 0
+}, {
+    "startStation": "西岗桦墅",
+    "endStation": "仙林湖",
+    "traffic": 0
+}, {
+    "startStation": "泰山新村",
+    "endStation": "泰冯路",
+    "traffic": 472.70680290750033
+}, {
+    "startStation": "泰冯路",
+    "endStation": "高新开发区",
+    "traffic": 1890.198912801641
+}, {
+    "startStation": "高新开发区",
+    "endStation": "信息工程大学",
+    "traffic": 1890.198912801641
+}, {
+    "startStation": "信息工程大学",
+    "endStation": "卸甲甸",
+    "traffic": 1800.4811169845023
+}, {
+    "startStation": "卸甲甸",
+    "endStation": "大厂",
+    "traffic": 1635.5929449169232
+}, {
+    "startStation": "大厂",
+    "endStation": "葛塘",
+    "traffic": 1483.6441161999628
+}, {
+    "startStation": "葛塘",
+    "endStation": "长芦",
+    "traffic": 1075.4193173089116
+}, {
+    "startStation": "长芦",
+    "endStation": "化工园",
+    "traffic": 1075.4193173089116
+}, {
+    "startStation": "化工园",
+    "endStation": "六合开发区",
+    "traffic": 939.8610420549387
+}, {
+    "startStation": "六合开发区",
+    "endStation": "龙池",
+    "traffic": 939.8610420549387
+}, {
+    "startStation": "龙池",
+    "endStation": "雄州",
+    "traffic": 820.6745557487335
+}, {
+    "startStation": "雄州",
+    "endStation": "凤凰山公园",
+    "traffic": 572.6966106316606
+}, {
+    "startStation": "凤凰山公园",
+    "endStation": "方州广场",
+    "traffic": 270.7326530323808
+}, {
+    "startStation": "方州广场",
+    "endStation": "沈桥",
+    "traffic": 74.97457399392873
+}, {
+    "startStation": "沈桥",
+    "endStation": "八百桥",
+    "traffic": 48.47214260625839
+}, {
+    "startStation": "八百桥",
+    "endStation": "金牛湖",
+    "traffic": 48.47214260625839
+}, {
+    "startStation": "翔宇路南",
+    "endStation": "铜山",
+    "traffic": 199.72251488648078
+}, {
+    "startStation": "铜山",
+    "endStation": "石湫",
+    "traffic": 199.72251488648078
+}, {
+    "startStation": "石湫",
+    "endStation": "明觉",
+    "traffic": 161.5953392992072
+}, {
+    "startStation": "明觉",
+    "endStation": "团结圩",
+    "traffic": 161.5953392992072
+}, {
+    "startStation": "团结圩",
+    "endStation": "高淳",
+    "traffic": 161.5953392992072
+}, {
+    "startStation": "安德门",
+    "endStation": "小行",
+    "traffic": 6326.795957695042
+}, {
+    "startStation": "小行",
+    "endStation": "中胜",
+    "traffic": 6034.001447694731
+}, {
+    "startStation": "中胜",
+    "endStation": "元通",
+    "traffic": 5520.832189858296
+}, {
+    "startStation": "元通",
+    "endStation": "奥体中心",
+    "traffic": 2748.3513485852727
+}, {
+    "startStation": "奥体中心",
+    "endStation": "梦都大街",
+    "traffic": 2505.034985858358
+}, {
+    "startStation": "梦都大街",
+    "endStation": "绿博园",
+    "traffic": 1961.2950729892134
+}, {
+    "startStation": "绿博园",
+    "endStation": "江心洲",
+    "traffic": 1843.9855099864683
+}, {
+    "startStation": "江心洲",
+    "endStation": "临江",
+    "traffic": 1620.794334955354
+}, {
+    "startStation": "临江",
+    "endStation": "浦口万汇城",
+    "traffic": 1620.794334955354
+}, {
+    "startStation": "浦口万汇城",
+    "endStation": "南京工业大学",
+    "traffic": 1438.008035853429
+}, {
+    "startStation": "南京工业大学",
+    "endStation": "龙华路",
+    "traffic": 1206.871391180481
+}, {
+    "startStation": "龙华路",
+    "endStation": "文德路",
+    "traffic": 754.1862947954585
+}, {
+    "startStation": "文德路",
+    "endStation": "雨山路",
+    "traffic": 39.44598969937491
+}]
