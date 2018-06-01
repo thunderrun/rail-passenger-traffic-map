@@ -1,16 +1,29 @@
+const downloadFile = (filename, text) => {
+  const element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
+// modify passenger flow line width
 let firstChange = true;
 let linesElements = [];
 let originStrokeWidth = [];
-
 const changeLineWidth = (scale) => {
-  if (firstChange === true ){
+  if (firstChange === true) {
     linesElements = document.querySelectorAll('#passenger-flow');
     linesElements.forEach((line, index) => {
-      originStrokeWidth[index] = parseInt(line.style['stroke-width'].slice(0, -2));
-      line.style['stroke-width'] = `${originStrokeWidth[index] * scale}px`; 
+      originStrokeWidth[index] = Number(line.style['stroke-width'].slice(0, -2));
+      line.style['stroke-width'] = `${originStrokeWidth[index] * scale}px`;
     });
     firstChange = false;
-  }else {
+  } else {
     linesElements.forEach((line, index) => {
       line.style['stroke-width'] = `${originStrokeWidth[index] * scale}px`;
     });
@@ -185,7 +198,7 @@ const matchCoordinates = (coordinatesA, coordinatesB, deviation = 2) => {
   lines.forEach(line => {
     const stations = line.st;
     stations.forEach((station) => {
-      addStationToSvg(station, map, line.cl);      
+      addStationToSvg(station, map, line.cl);
     })
   });
 
@@ -198,12 +211,18 @@ const matchCoordinates = (coordinatesA, coordinatesB, deviation = 2) => {
     0.5 // initial zoom 
   );
 
+  // add export passenger flow data button and function
   document.querySelector('#export-data').onclick = () => {
     let exportData = [];
-    edges.forEach((edge)=>{
-      exportData.push({startStation: edge.startStation, endStation: edge.endStation, traffic: edge.traffic});
+    edges.forEach((edge) => {
+      exportData.push({
+        startStation: edge.startStation,
+        endStation: edge.endStation,
+        traffic: edge.traffic
+      });
     })
-    console.log(exportData);
+    const dataText = JSON.stringify(exportData);
+    downloadFile(`${cityAdcode}-passenger-flow-data.json`, dataText);
   }
 
 })();

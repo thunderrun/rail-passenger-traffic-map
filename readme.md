@@ -11,6 +11,7 @@ https://thunderrun.github.io/rail-passenger-traffic-map/
     - [南京](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=nanjing#route)
     - [合肥](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=hefei#route)
     - [杭州](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=hangzhou#route)
+    - [武汉](https://thunderrun.github.io/rail-passenger-traffic-map/subway.html?city=wuhan#route)    
     
 ## Resources
 
