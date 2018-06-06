@@ -16,8 +16,8 @@
   panzoom(railwayMap, {
     smoothScroll: false,
   }).zoomAbs(
-    0, // initial x position
-    0, // initial y position
+    -1800, // initial x position
+    -1000, // initial y position
     0.3 // initial zoom 
   );
 

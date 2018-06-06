@@ -1,3 +1,19 @@
+const changeMapMode = (mode) => {
+  location.hash = `#${mode}`;
+  location.reload();
+}
+
+const changeCity = (city) => {
+  changeUrlParam('city', city);
+}
+
+const changeUrlParam = (key, value) => {
+  const currentUrlSearch = window.location.search;
+  const searchParams = new URLSearchParams(currentUrlSearch);
+  searchParams.set(key, value);
+  window.location.search = `?${searchParams.toString()}`;
+}
+
 const getUrlParam = (key) => {
   const currentUrlSearch = window.location.search;
   const searchParams = new URLSearchParams(currentUrlSearch);
@@ -43,7 +59,7 @@ window.cbk = async () => {
   const cityName = getUrlParam('city');
   const cityAdcode = await getCityAdcode(cityName);
 
-  document.querySelector('#regular').href = `http://map.amap.com/subway/index.html?&${cityAdcode}`;
+  // document.querySelector('#regular').href = `http://map.amap.com/subway/index.html?&${cityAdcode}`;
 
   const mapMode = location.hash.slice(1);
   const subwayInfo = await getSubwayInfo(cityName, cityAdcode);
@@ -104,13 +120,22 @@ window.cbk = async () => {
     if ( response.status === 404) {
       document.querySelector('.fetch-data').innerHTML = `Traffic data not avaliable, <a href="#traffic" onclick="fetchTraffic()" >start fetching data</a>`;
     } else {
-      document.querySelector('.fetch-data').innerHTML = `Data avaliable, generating map`;
+      document.querySelector('.fetch-data').innerHTML = `Generating map`;
       window.open(`traffic.html?&${cityAdcode}`);
     }
   }
+
+  // init functions
+  isSelected();
+
 }
 
 const fetchTraffic = () => {
   document.querySelector('.fetch-data').innerHTML = `Fetching...`;
   getTraffic(subwayInfoGlobal);
+}
+
+const isSelected = () => {
+  document.querySelector(`option[value=${location.hash.substr(1)}]`).setAttribute('selected', 'true');
+  document.querySelector(`option[value=${getUrlParam('city')}]`).setAttribute('selected', 'true');
 }

@@ -21,20 +21,40 @@
     .map-mode {
       position: absolute;
       z-index: 99;
+      padding: 8px;
+      background-color: white;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .fetch-data {
       position: absolute;
       right: 0;
-      z-index: 99;
+      z-index: 98;
     }
   </style>
 </head>
 
 <body>
   <div class="map-mode">
-    <span>Map Mode: </span>
-    <span>
+    <span>City:</span>
+    <select onchange="changeCity(this.value)" style='margin-left: 8px; height: 22px;'>
+      <option value="nanjing">Nanjing</option>
+      <option value="hefei">Hefei</option>
+      <option value="hangzhou">Hangzhou</option>
+      <option value="wuhan">Wuhan</option>
+      <option value="wuxi">Wuxi</option>
+      <option value="suzhou">Suzhou</option>
+      <option value="shanghai">Shanghai</option>      
+    </select>
+    <span style='margin-left: 32px;'>Map Mode:</span>
+    <select onchange="changeMapMode(this.value)" style='margin-left: 8px; height: 22px;'>
+      <option value="route">Route</option>
+      <option value="data">Data</option>
+      <option value="traffic">Traffic</option>
+    </select>
+
+    <!-- <span>
       <a href="#route" onclick="location.reload()">Route</a>
     </span>/
     <span>
@@ -42,10 +62,10 @@
     </span>/
     <span>
       <a href="#traffic" onclick="location.reload()">Traffic</a>
-    </span>/
-    <span>
+    </span>/ -->
+    <!-- <span>
       <a id="regular" target="_blank" href="http://map.amap.com/subway/index.html">Regular</a>
-    </span>/
+    </span>/ -->
   </div>
   <div class="fetch-data">
   </div>
