@@ -54,6 +54,7 @@ const getIndex = async (coordinates, type) => {
 
 let subwayInfoGlobal = {};
 
+// int amap api related functions 
 window.cbk = async () => {
 
   const cityName = getUrlParam('city');
@@ -124,10 +125,6 @@ window.cbk = async () => {
       window.open(`traffic.html?&${cityAdcode}`);
     }
   }
-
-  // init functions
-  isSelected();
-
 }
 
 const fetchTraffic = () => {
@@ -139,3 +136,6 @@ const isSelected = () => {
   document.querySelector(`option[value=${location.hash.substr(1)}]`).setAttribute('selected', 'true');
   document.querySelector(`option[value=${getUrlParam('city')}]`).setAttribute('selected', 'true');
 }
+
+// init functions
+isSelected();
