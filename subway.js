@@ -121,7 +121,7 @@ window.cbk = async () => {
     if ( response.status === 404) {
       document.querySelector('.fetch-data').innerHTML = `Traffic data not avaliable, <a href="#traffic" onclick="fetchTraffic()" >start fetching data</a>`;
     } else {
-      document.querySelector('.fetch-data').innerHTML = `Generating map`;
+      document.querySelector('.fetch-data').innerHTML = `Data avaliable, Generating map`;
       window.open(`traffic.html?&${cityAdcode}`);
     }
   }
